@@ -1,7 +1,7 @@
 # IA367H - Introduction to Reinforcement Learning Course
-## FEEC -- Unicamp
+## FEEC - Unicamp
 
-Project dedicated to IA367H course at FEEC-Unicamp on 2025S2
+Repository dedicated to IA367H course at FEEC-Unicamp on 2025S2
 
 ## Project Organization
 
