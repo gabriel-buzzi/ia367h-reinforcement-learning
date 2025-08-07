@@ -37,18 +37,32 @@ If the LaTeX project is more complex, you might need to install the full version
 sudo apt install texlive-full
 ```
 
+In order to work with LaTeX on VSCode it is highly recommended to install **LaTeX Workshop** extension.
+
+#### Ruff
+
+[Ruff](https://docs.astral.sh/ruff/) is an extremely fast Python linter and code formatter, written in Rust. Ruff rules will be forced on code inside `ia367h-rl` folder. Ruff should be installed as a project dependency as you run any `pixi` command.
+
+One can update Ruff configs within `pyproject.toml`.
+
+In order to have a better experience with Ruff, it is recommended to install the **Ruff** VSCode extension and used its shortcuts while writting code.
+
+#### Install pre-commit
+
+Pre-commits are scripts called every time you commit something to the repository. In orther to be able to commit you code you should have pre-commit install, for that run the following:
+
+```
+pip install pre-commit
+pre-commit install
+```
+
+The only pre-commit hook condigured by now is the Ruff pre-commit for code linting and formatting. This should enforce code inside `/ia367h-rl` to follow the Ruff rules defined at `pyproject.toml`. `.ipynb` files inside `/notebooks` are ignored by Ruff pre-commit hooks.
+
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
 ├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── data               <- Store your data files inside this folder (all files here will be ignored by git).
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
@@ -59,7 +73,7 @@ sudo apt install texlive-full
 ├── pyproject.toml     <- Project configuration file with package metadata for 
 │                         ia367h-rl and configuration for tools like black
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── references         <- Reference research papers and any other explanatory materials.
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   ├── paper          <- LaTeX files for final project paper

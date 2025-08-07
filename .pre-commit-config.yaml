@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.6  # Replace with the latest version of Ruff
+    hooks:
+      - id: ruff
+        name: Ruff Fix
+        args: [--fix]
+        exclude: ^notebooks/.*\.ipynb$
+        stages: [commit]
+
+      - id: ruff-format
+        name: Ruff Format
+        exclude: ^notebooks/.*\.ipynb$
+        stages: [commit]
+
+      - id: ruff
+        name: Ruff Check (No Fix)
+        args: []
+        exclude: ^notebooks/.*\.ipynb$
+        stages: [commit]
