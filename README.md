@@ -1,8 +1,5 @@
-# ia367h-reinforcement-learning
-
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+# IA367H - Introduction to Reinforcement Learning Course
+## FEEC -- Unicamp
 
 Project dedicated to IA367H course at FEEC-Unicamp on 2025S2
 
@@ -10,7 +7,6 @@ Project dedicated to IA367H course at FEEC-Unicamp on 2025S2
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
 │   ├── external       <- Data from third party sources.
@@ -32,29 +28,14 @@ Project dedicated to IA367H course at FEEC-Unicamp on 2025S2
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   ├── paper          <- LaTeX files for final project paper
 │   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
 │
 └── ia367h-rl   <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes ia367h-rl a Python module
     │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+    └── main.py                 <- Project main
 ```
 
 --------
