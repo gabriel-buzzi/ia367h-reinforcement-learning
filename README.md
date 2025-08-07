@@ -33,11 +33,14 @@ If you're using **Windows**, you might install the **Windows Subsystem for Linux
    Follow the instructions to create your Linux username and password.
 
 4. **Update Ubuntu Packages**
-   Inside the Ubuntu terminal, run:
+   Inside the WSL terminal, run:
 
    ```bash
    sudo apt update && sudo apt upgrade -y
    ```
+
+5. **Navigate to your home folder**  
+   Inside the WSL terminal, run `cd` to navigate to your home folder represented by the `~` path. If you want you can create a folder for your projects using `mkdir <your-projects-folder>`, for example and continue the tutorial from inside that folder.
 
 ✅ You're now ready to proceed with the Linux-based setup steps below.
 
