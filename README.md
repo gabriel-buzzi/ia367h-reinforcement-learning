@@ -4,59 +4,119 @@
 Repository dedicated to IA367H course at FEEC-Unicamp on 2025S2
 
 ## Contributing
-#### Clone the Repository
 
-Use the following code to clone this repository.
+It is **strongly recommend** using **Linux** when contributing to this project.
+If you're using **Windows**, you might install the **Windows Subsystem for Linux (WSL)** before proceeding.
+
+> ⚠️ The instructions below are intended for **Linux environments**.
+> If you want to contribute from a native Windows setup (not using WSL), please refer to the official documentation for each tool to perform the appropriate setup.
+
+---
+
+### Setting Up WSL on Windows (Quick Guide)
+
+1. **Open PowerShell as Administrator**
+   Right-click the Start menu and choose **Windows Terminal (Admin)** or **PowerShell (Admin)**.
+
+2. **Install WSL and Ubuntu**
+   Run the following command:
+
+   ```powershell
+   wsl --install
+   ```
+
+   This installs WSL with Ubuntu as the default distribution.
+   Restart your computer if prompted.
+
+3. **Initial Ubuntu Setup**
+   After reboot, a terminal window will open.
+   Follow the instructions to create your Linux username and password.
+
+4. **Update Ubuntu Packages**
+   Inside the Ubuntu terminal, run:
+
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+
+✅ You're now ready to proceed with the Linux-based setup steps below.
+
+---
+
+### Clone the Repository
+
+Use the following command to clone the repository:
+
 ```bash
 git clone https://github.com/gabriel-buzzi/ia367h-reinforcement-learning.git
+cd ia367h-reinforcement-learning
 ```
 
-#### Install Pixi
+---
 
-[Pixi](https://pixi.sh/latest/) is a fast, modern, and reproducible package management tool for developers of all backgrounds.
+### Install Pixi
 
-To install [Pixi](https://pixi.sh/latest/) run the following.
+[Pixi](https://pixi.sh/latest/) is a modern and fast package manager for reproducible development environments.
 
-For Linux & macOS run the following:
+To install Pixi on Linux or macOS:
+
 ```bash
 curl -fsSL https://pixi.sh/install.sh | sh
 ```
 
-Once you have Pixi installed navigate to the project root folder and run `pixi install` to setup the project environment.
+Then, in the project root directory, run:
 
-#### Install LaTeX
+```bash
+pixi install
+```
 
-This project includes a set of `.tex` files for writting a paper. To render LaTeX files install the following
+This sets up all project dependencies defined in `pyproject.toml`.
+
+---
+
+### Install LaTeX
+
+This project includes LaTeX files used to write a paper. To compile LaTeX documents, install:
 
 ```bash
 sudo apt install texlive
 ```
 
-If the LaTeX project is more complex, you might need to install the full version of texlive with the following
+If you encounter missing packages or prefer a more complete setup, install the full distribution:
+
 ```bash
 sudo apt install texlive-full
 ```
 
-In order to work with LaTeX on VSCode it is highly recommended to install **LaTeX Workshop** extension.
+> 💡 **Tip:** For a better LaTeX editing experience in VSCode, install the **LaTeX Workshop** extension.
 
-#### Ruff
+---
 
-[Ruff](https://docs.astral.sh/ruff/) is an extremely fast Python linter and code formatter, written in Rust. Ruff rules will be forced on code inside `ia367h-rl` folder. Ruff should be installed as a project dependency as you run any `pixi` command.
+### Ruff
 
-One can update Ruff configs within `pyproject.toml`.
+[Ruff](https://docs.astral.sh/ruff/) is a fast Python linter and formatter written in Rust.
+It is configured to enforce code style in the `ia367h-rl/` directory.
 
-In order to have a better experience with Ruff, it is recommended to install the **Ruff** VSCode extension and used its shortcuts while writting code.
+Ruff is included as a dependency in the Pixi environment. Configuration is managed in the `pyproject.toml` file.
 
-#### Install pre-commit
+> 💡 **VSCode users:** Install the **Ruff** extension to get inline feedback and use linting/formatting shortcuts while writing code.
 
-Pre-commits are scripts called every time you commit something to the repository. In orther to be able to commit you code you should have pre-commit install, for that run the following:
+---
 
-```
+### Pre-commit Hooks
+
+This project uses [pre-commit](https://pre-commit.com/) to run automatic checks before each commit.
+
+To install and enable it, run:
+
+```bash
 pip install pre-commit
 pre-commit install
 ```
 
-The only pre-commit hook condigured by now is the Ruff pre-commit for code linting and formatting. This should enforce code inside `/ia367h-rl` to follow the Ruff rules defined at `pyproject.toml`. `.ipynb` files inside `/notebooks` are ignored by Ruff pre-commit hooks.
+Currently, the only configured hook is **Ruff**, which checks and formats code inside `ia367h-rl/` according to the rules in `pyproject.toml`.
+
+> 📝 **Note:** `.ipynb` files inside the `notebooks/` folder are excluded from pre-commit checks.
 
 ## Project Organization
 
