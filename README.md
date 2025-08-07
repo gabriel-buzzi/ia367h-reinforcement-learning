@@ -3,6 +3,40 @@
 
 Repository dedicated to IA367H course at FEEC-Unicamp on 2025S2
 
+## Contributing
+#### Clone the Repository
+
+Use the following code to clone this repository.
+```bash
+git clone https://github.com/gabriel-buzzi/ia367h-reinforcement-learning.git
+```
+
+#### Install Pixi
+
+[Pixi](https://pixi.sh/latest/) is a fast, modern, and reproducible package management tool for developers of all backgrounds.
+
+To install [Pixi](https://pixi.sh/latest/) run the following.
+
+For Linux & macOS run the following:
+```bash
+curl -fsSL https://pixi.sh/install.sh | sh
+```
+
+Once you have Pixi installed navigate to the project root folder and run `pixi install` to setup the project environment.
+
+#### Install LaTeX
+
+This project includes a set of `.tex` files for writting a paper. To render LaTeX files install the following
+
+```bash
+sudo apt install texlive
+```
+
+If the LaTeX project is more complex, you might need to install the full version of texlive with the following
+```bash
+sudo apt install texlive-full
+```
+
 ## Project Organization
 
 ```
