@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bergstra et~al.(2011)Bergstra, Bardenet, Bengio, and K\'{e}gl]{tpe_2011}
+James Bergstra, R\'{e}mi Bardenet, Yoshua Bengio, and Bal\'{a}zs K\'{e}gl.
+\newblock Algorithms for hyper-parameter optimization.
+\newblock In J.~Shawe-Taylor, R.~Zemel, P.~Bartlett, F.~Pereira, and K.Q. Weinberger, editors, \emph{Advances in Neural Information Processing Systems}, volume~24. Curran Associates, Inc., 2011.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2011/file/86e8f7ab32cfd12577bc2619bc635690-Paper.pdf}.
+
+\end{thebibliography}

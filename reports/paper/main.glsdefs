@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{mlp}%
+{%
+name={\acronymfont {\glsentryshort {mlp}}},%
+sort={MLP},%
+type={acronym},%
+first={MLP},%
+firstplural={MLPs},%
+text={MLP},%
+plural={MLPs},%
+description={Multi-layer Perceptron},%
+descriptionplural={Multi-layer Perceptron},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Multi-layer Perceptron},%
+longplural={Multi-layer Perceptrons},%
+short={MLP},%
+shortplural={MLPs},%
+counter={page},%
+parent={},%
+%
+}%
+
