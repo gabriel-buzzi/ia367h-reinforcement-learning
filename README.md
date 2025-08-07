@@ -46,6 +46,33 @@ If you're using **Windows**, you might install the **Windows Subsystem for Linux
 
 ---
 
+### Using WSL with Visual Studio Code
+
+You can use VS Code to develop directly inside your WSL environment:
+
+1. **Start VS Code**
+
+2. **Connect to WSL**
+   Press `F1` (or `Ctrl+Shift+P`), then:
+
+   * Select **`WSL: Connect to WSL`** to open the default WSL distro, or
+   * Select **`WSL: Connect to WSL using Distro`** to choose a specific one.
+
+3. **Open a Folder**
+
+   * Use the **File** menu to open the project folder, or
+   * If you already have a folder open, press `F1` and run **`WSL: Reopen Folder in WSL`** to switch the current workspace to the WSL environment.
+
+4. **Returning to Windows**
+
+   * If you're inside a WSL window and want to switch back, use **`WSL: Reopen in Windows`**.
+
+> 💡 Make sure you have the **Remote - WSL** extension installed in VS Code for this workflow.
+
+> 📝 By connecting your VSCode to WSL your VSCode terminal and all other features run directly inside WSL.
+
+---
+
 ### Clone the Repository
 
 Use the following command to clone the repository:
